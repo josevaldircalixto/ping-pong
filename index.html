@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Ping-pong</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <canvas></canvas>
+  <script>
+    const canvasE1 = document.querySelector("canvas")
+    const canvasCtx = canvasE1.getContext("2d")
+
+    function setup() {
+      canvasE1.width = canvasCtx.width = window.innerWidth
+
+      canvasE1.height = canvasCtx.height = window.innerHeight
+    }
+
+    function draw() {
+      canvasCtx.fillStyle("#286047")
+      canvasCtx.fillRect(0, 0, window.innerWidth, window.innerHeight)
+
+      setup()
+    }
+  </script>
+</body>
+
+</html>
