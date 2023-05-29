@@ -1,3 +1,7 @@
 * {
-  background-color: black
+  overflow: hidden;
+  /* barras de rolagem */
+  margin: 0;
+  padding: 0;
+
 }
